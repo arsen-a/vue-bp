@@ -13,12 +13,12 @@ export default class ExampleService {
         return axios.get(`endpoint/${id}`)
     }
 
-    add(car) {
-        axios.post('endpoint', car)
+    add(object) {
+        axios.post('endpoint', object)
     }
 
-    update(id, car) {
-        axios.put(`endpoint/${id}`, car)
+    update(id, object) {
+        axios.put(`endpoint/${id}`, object)
     }
 
     delete(id) {
