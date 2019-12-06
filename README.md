@@ -2,7 +2,11 @@
 
 ## Project setup
 ```
-npm install
+Run 'npm install' to install all dependencies;
+
+Configure your Vue Router in /src/router/router.js file;
+
+Configure your baseURL and endpoints for Axios in /src/services/ExampleService.js file;
 ```
 
 ### Compiles and hot-reloads for development
