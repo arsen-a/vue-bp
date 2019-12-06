@@ -1,4 +1,4 @@
-# vue-bp
+# Vue.js quickstart boilerplate with preinstalled Vue Router and Axios
 
 ## Project setup
 ```
