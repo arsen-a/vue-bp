@@ -1,16 +1,25 @@
 <template>
   <div>
-    <h2>Vue.js boilerplate with pre-installed Axios and Vue Router</h2>
-    <p>-No-console rule set to off.</p>
-    <p>Created and maintained by Arsen Sekularac</p>
-    <a href="https://github.com/arsen-a">GitHub</a>
-    <a href="https://www.facebook.com/sekularac.a">Facebook</a>
+    <h2>Vue.js boilerplate with pre-installed Vue Router, Vuex and Axios</h2>
+    <h3>{{ vuexMsg }}</h3>
+    <div class="mt-5 mb-5">
+      <p><strong>No-console rule set to off</strong></p>
+      <p><strong>Bootstrap 4 CDN included</strong></p>
+    </div>
+    <p style="color: ltgrey; font-size: 14px;">Created and maintained by Arsen Sekularac</p>
+    <a href="https://github.com/arsen-a" target="_blank">GitHub</a>
+    <a href="https://www.facebook.com/sekularac.a" target="_blank">Facebook</a>
   </div>
 </template>
 
 <script>
 export default {
-  name: "ExampleComponent"
+  name: "ExampleComponent",
+  computed: {
+    vuexMsg() {
+      return this.$store.state.exampleData
+    }
+  }
 };
 </script>
 

@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
+    <img style="max-width: 230px;" src="./assets/vuexlogo.png" alt="Vuex logo">
     <router-view/>
   </div>
 </template>

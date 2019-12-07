@@ -1,10 +1,12 @@
-# Vue.js quickstart boilerplate with preinstalled Vue Router and Axios
+# Vue.js quickstart boilerplate with preinstalled Vue Router, Vuex and Axios
 
 ## Project setup
 ```
 Run 'npm install' to install all dependencies;
 
 Configure your Vue Router in /src/router/router.js file;
+
+Configure your Vuex store in /src/store/store.js file;
 
 Configure your baseURL and endpoints for Axios in /src/services/ExampleService.js file;
 ```
