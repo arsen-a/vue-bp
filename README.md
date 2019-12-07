@@ -1,4 +1,4 @@
-# Vue.js quickstart boilerplate with preinstalled Vue Router, Vuex and Axios
+# Vue.js quickstart boilerplate with preinstalled Vue Router, Axios and Bootstrap CDN
 
 ## Project setup
 ```
