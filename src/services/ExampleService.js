@@ -1,29 +1,30 @@
 import axios from 'axios'
 
-export default class ExampleService {
+class ExampleService {
     constructor() {
-        axios.defaults.baseURL = 'http://localhost:3000/api/' 
+        this.axios = axios
+        this.axios.defaults.baseURL = 'api url here' 
     }
 
     getAll() {
-        return axios.get('endpoint')
+        return this.axios.get('endpoint')
     }
 
     getSingle(id) {
-        return axios.get(`endpoint/${id}`)
+        return this.axios.get(`endpoint/${id}`)
     }
 
     add(object) {
-        axios.post('endpoint', object)
+        return this.axios.post('endpoint', object)
     }
 
     update(id, object) {
-        axios.put(`endpoint/${id}`, object)
+        return this.axios.put(`endpoint/${id}`, object)
     }
 
     delete(id) {
-        axios.delete(`endpoint/${id}`)
+        return this.axios.delete(`endpoint/${id}`)
     }
 }
 
-export const EXAMPLESERVICE = new ExampleService()
+export const exampleService = new ExampleService()

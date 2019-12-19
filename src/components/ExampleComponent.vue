@@ -1,11 +1,10 @@
 <template>
-  <div>
+  <div class="container">
     <h2>Vue.js boilerplate with pre-installed Vue Router, Vuex and Axios</h2>
-    <h3>{{ vuexMsg }}</h3>
-    <div class="mt-5 mb-5">
-      <p><strong>No-console rule set to off</strong></p>
-      <p><strong>Bootstrap 4 CDN included</strong></p>
-    </div>
+    <ul class="list-group mt-5 mb-5">
+      <li class="list-group-item"><strong>No-console rule set to off</strong></li>
+      <li class="list-group-item"><strong>Bootstrap 4 included</strong></li>
+    </ul>
     <p style="color: ltgrey; font-size: 14px;">Created and maintained by Arsen Sekularac</p>
     <a href="https://github.com/arsen-a" target="_blank">GitHub</a>
     <a href="https://www.facebook.com/sekularac.a" target="_blank">Facebook</a>
@@ -14,12 +13,7 @@
 
 <script>
 export default {
-  name: "ExampleComponent",
-  computed: {
-    vuexMsg() {
-      return this.$store.state.exampleData
-    }
-  }
+  name: "ExampleComponent"
 };
 </script>
 
