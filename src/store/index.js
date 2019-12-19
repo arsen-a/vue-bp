@@ -4,8 +4,10 @@ import { ExampleStore } from './modules/ExampleStoreModule'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+const store = new Vuex.Store({
     modules: {
         ExampleStore
     }
 })
+
+export default store
